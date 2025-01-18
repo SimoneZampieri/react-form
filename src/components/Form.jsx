@@ -49,7 +49,10 @@ const Form = () => {
               className="list-group-item  d-flex justify-content-between"
             >
               {task.text}
-              <i onClick={() => handlerRemove(task.id)}></i>
+              <i
+                className="fa-solid fa-trash"
+                onClick={() => handlerRemove(task.id)}
+              ></i>
             </li>
           ))}
         </ul>
